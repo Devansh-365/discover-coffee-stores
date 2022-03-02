@@ -10,7 +10,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #373b64;
-  height: 100%;
 }
 
 a {
@@ -34,7 +33,7 @@ pre {
   margin: 0;
 }
 
-button{
+button {
   background-color: transparent;
   background-image: none;
   font-weight: 600;

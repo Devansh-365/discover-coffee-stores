@@ -46,7 +46,7 @@ const DynamicRoute = (props) => {
         )
     }
 
-    const {location, name, imgUrl} = props.coffeStores
+    const {address, name, neighbourhood, imgUrl} = props.coffeStores
 
     const handleUpvoteButton = () => {
         console.log("You Click Upvote!!!")
@@ -70,11 +70,11 @@ const DynamicRoute = (props) => {
                 <div className={cls("glass",styles.col2)}>
                     <div className={styles.iconWrapper}>
                         <Image src="/static/icons/places.svg" width={24} height={24} />
-                        <p className={styles.text}>{location.address}</p>
+                        <p className={styles.text}>{address}</p>
                     </div>
-                    {location.neighborhood && <div className={styles.iconWrapper}>
+                    {neighbourhood && <div className={styles.iconWrapper}>
                         <Image src="/static/icons/nearMe.svg" width={24} height={24} />
-                        <p className={styles.text}>{location.neighborhood}</p>
+                        <p className={styles.text}>{neighbourhood}</p>
                     </div>}
                     <div className={styles.iconWrapper}>
                         <Image src="/static/icons/star.svg" width={24} height={24} />
